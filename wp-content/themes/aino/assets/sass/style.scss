@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/*
+Theme Name: Aino
+Theme URI: https://wpaino.com
+Author: elmastudio
+Author URI: https://www.elmastudio.de/en/
+Description: Aino is a Gutenberg-first WordPress theme.
+Version: 1.1.5
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+Text Domain: aino
+Tags: blog, grid-layout, one-column, featured-images, full-width-template, theme-options, custom-colors, custom-menu, editor-style, sticky-post, translation-ready, threaded-comments, footer-widgets, block-styles, wide-blocks
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> Table of Contents:
+----------------------------------------------------------------
+# 1-base
+	## variables
+	## mixins
+	## normalize
+	## sanitize
+	## accessibility
+	## clearings
+	## grid
+	## typography
+	## media
+# 2-components
+	## forms
+	## icons
+	## links
+	## buttons
+	## avatars
+	## badges
+	## lists
+	## tables
+	## widgets
+# 3-blocks
+	## Blocks Core
+	## Blocks Aino
+# 4-layout
+	## structure
+	## header
+	## blog
+	## post
+	## page
+	## pagination
+	## footer
+--------------------------------------------------------------*/
+
+@import "1-base/base-index";
+@import "2-components/components-index";
+@import "3-blocks/blocks-index";
+@import "4-layout/layout-index";

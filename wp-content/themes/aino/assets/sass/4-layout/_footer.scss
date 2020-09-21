@@ -1,0 +1,155 @@
+.site-footer {
+	background-color: $color__background;
+}
+
+.site-footer,
+.textwidget p {
+	color: $color__text_two;
+	fill: $color__text_two;
+}
+
+.footer-wrap {
+	padding: $spacing-mobile-10 0;
+
+	@include breakpoint(m) {
+		padding: $spacing-desktop-10 0;
+	}
+}
+
+.footer-widget-wrap {
+	@include flexbox;
+	flex-direction: column;
+	padding-bottom: $spacing-mobile-6;
+
+	@include breakpoint(m) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-bottom: $spacing-desktop-6;
+	}
+}
+
+.footer-widget {
+
+	@include breakpoint(m) {
+		min-width: $col2;
+		padding: 0 $spacing-3;
+	}
+
+	.widget {
+		padding-bottom: $spacing-mobile-6;
+		@include breakpoint(m) {
+			padding-bottom: $spacing-desktop-6;
+		}
+		.footerwidgets-centered & {
+			text-align: center;
+		}
+	}
+}
+
+/* Footer Info */
+.footer-info {
+	@include flexbox;
+	flex-direction: column;
+	@include breakpoint(m) {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.footerinfo-centered & {
+		justify-content: center;
+		@include breakpoint(m) {
+			flex-direction: column;
+		}
+	}
+}
+
+.site-info {
+
+	@include font-body-xs;
+	color: $color__text_two;
+
+	.footerinfo-centered & {
+		@include flexbox;
+		justify-content: center;
+	}
+
+	.site-name {
+		margin-right: 2px;
+
+		&:after {
+			content: '.';
+		}
+	}
+
+	a {
+		padding: 0;
+		@include font-body-xs;
+		color: $color__text_two;
+
+		&:hover {
+			color: $color__primary;
+		}
+	}
+}
+
+/* Footer Social Nav */
+.social-footer-nav {
+	padding-bottom: $spacing-mobile-4;
+
+	@include breakpoint(m) {
+		padding: 0;
+	}
+
+	.footerinfo-centered & {
+		@include flexbox;
+		justify-content: center;
+		padding-bottom: $spacing-mobile-4;
+		@include breakpoint(m) {
+			padding-bottom: $spacing-desktop-4;
+		}
+	}
+}
+
+.footer-nav ul li {
+	display: block;
+	padding: 0 0 $spacing-3;
+
+	&:last-child {
+		padding: 0;
+	}
+	@include breakpoint(m) {
+		display: inline-block;
+		padding: 0 $spacing-3 0 0;
+	}
+}
+
+/* Light Footer Style ---------------------------- */
+.footer-light {
+
+	.site-footer,
+	.site-info,
+	.site-info a,
+	.site-footer .widget-title,
+	.textwidget p,
+	.textwidget p a,
+	.footer-widget-wrap a,
+	.site-footer .menu-social-container .icon {
+		color: $color__white;
+		fill: $color__white;
+	}
+
+	.footer-widget-wrap a,
+	.site-info a {
+
+		&:hover,
+		&:focus {
+			color: $color__white_hover;
+			fill: $color__white_hover;
+		}
+	}
+
+	.site-footer .menu-social-container ul li a:hover .icon {
+		fill: $color__white_hover;
+	}
+}

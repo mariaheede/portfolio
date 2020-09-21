@@ -1,0 +1,52 @@
+.icon {
+	display: inline-block;
+	fill: currentColor;
+	position: relative;
+	top: 0;
+	vertical-align: middle;
+	text-align: center;
+	stroke-width: 0;
+	stroke: currentColor;
+	width: $spacing-3;
+	height: $spacing-3;
+	padding: 2px;
+}
+
+/* Social Icons */
+.menu-social-container .icon {
+	fill: $color__text_one;
+	width: $spacing-3;
+	height: $spacing-3;
+	margin: $spacing-xs;
+}
+
+.menu-social-container ul li a:hover .icon {
+	fill: $color__primary;
+}
+
+/* Edit Link Icon */
+.edit-link .icon {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+	width: $spacing-3;
+	height: $spacing-3;
+}
+
+/* Search Form Icon */
+.search-icon {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+	@include flexbox;
+	@include flex-center;
+	width: $spacing-3;
+	height: $spacing-3;
+	color: #707070;
+
+	.icon {
+		width: $spacing-3;
+		height: $spacing-3;
+		padding: 0;
+	}
+}

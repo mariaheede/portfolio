@@ -1,0 +1,41 @@
+/*
+ Theme Name:   Astra Child Theme
+ Theme URI:    http://portfolio.mariahautorp.dk/astra-child-theme/
+ Description:  Astra Child Theme basted on the parent theme Astra
+ Author:       Maria Hautorp Heede
+ Author URI:   http://portfolio.mariahautorp.dk
+ Template:     astra
+ Version:      1.1.9
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  astrachild
+*/
+
+.elementor-widget-image .elementor-image img {
+  border-radius: 5px;
+}
+
+.elementor-1402 .elementor-element.elementor-element-c4c190c .elementor-heading-title {
+    background-color: #CBC4B8BD;
+}
+
+.elementor-1402 .elementor-element.elementor-element-d1a3acb .elementor-heading-title {
+  background-color: #CBC4B8BD;  
+}
+
+.elementor-1402 .elementor-element.elementor-element-48fed3d .elementor-heading-title {
+    background-color: #CBC4B8BD; 
+}
+
+.elementor-1402 .elementor-element.elementor-element-83b6190 .elementor-heading-title {
+   background-color: #CBC4B8BD;
+}
+
+.elementor-1402 .elementor-element.elementor-element-e13675a .elementor-heading-title {
+    background-color: #CBC4B8BD;
+}
+
+.elementor-1402 .elementor-element.elementor-element-c0f096a .elementor-heading-title {
+    background-color: #CBC4B8BD;
+}

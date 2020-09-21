@@ -1,0 +1,115 @@
+a {
+	color: inherit;
+
+	&:active,
+	&:hover {
+		outline: 0;
+	}
+}
+
+/* Primary Links */
+.entry-content p a,
+.entry-content li a,
+.authorbox-content p a,
+.comment-content li a,
+.comment-content p a,
+.wp-caption-text a,
+cite a,
+.wp-block-image figcaption a,
+.wp-block-audio figcaption a,
+.wp-block-embed figcaption a {
+	color: currentColor;
+	text-decoration: underline;
+
+	&:hover {
+		color: $color__primary;
+	}
+}
+
+h1, h2, h3, h4, h5, h6,
+.entry-content p,
+.entry-content li {
+
+	&.has-text-color {
+
+	&.has-white-color {
+
+		a:hover {
+			color: $color__white_hover;
+			}
+		}
+	}
+}
+
+/* Links that keep the default text color and only show link color on hover */
+.site-title a,
+h2.entry-title a,
+.comment-list b.fn a,
+.main-navigation a {
+	color: $color__text_one;
+	fill: $color__text_one;
+}
+
+.posts-container .hentry .entry-meta a,
+.entry-comments a,
+.posted-on a,
+.comment-reply-title #cancel-comment-reply-link {
+	color: $color__text_two;
+	fill: $color__text_two;
+}
+
+/* Link Hovers */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.site-title a,
+.single-post .entry-cats a,
+.single-post .entry-meta a,
+.single-post .navigation .nav-title .nav-subtitle,
+.footer-widget-wrap a,
+.comment-metadata a,
+.comment-reply-title #cancel-comment-reply-link,
+.logged-in-as a {
+
+	&:hover {
+		color: $color__primary;
+		fill: $color__primary;
+	}
+}
+
+/* Tags */
+.entry-tags a {
+	border: 1px solid $color__border;
+	color: $color__text_two;
+	margin: 0 $spacing-xxs $spacing-xs;
+	padding: 6px $spacing-s;
+	@include flexbox;
+	@include flex-center;
+	font-size: 13px;
+	line-height: 1.23;
+	font-weight: bold;
+	@include border-radius-l;
+
+	&:hover {
+		background: $color__background;
+		border: 1px solid transparent;
+	}
+}
+
+/* Link Transitions */
+.site-branding a,
+.primary-menu a,
+.site-footer .widget_mc4wp_form_widget a,
+.site-footer a,
+.social-header-nav .icon,
+.social-footer-nav .icon,
+.sd-social-icon .sd-content ul li[class*='share-'] a {
+	@include transition-default;
+}
+
+.pagination a,
+.related-img,
+.post-edit-link,
+.entry-link,
+.entry-link img,
+.navigation .nav-thumb {
+	@include transition-posthover;
+}

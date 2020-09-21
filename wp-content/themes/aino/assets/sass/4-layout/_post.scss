@@ -1,0 +1,410 @@
+.single-post {
+
+	.site-main {
+		padding: 0;
+	}
+
+	.has-post-thumbnail .entry-content {
+		padding-top: $spacing-mobile-6;
+
+		@include breakpoint(m) {
+			padding-top: $spacing-desktop-6;
+		}
+	}
+
+	.hentry.comments-closed.no-comments {
+		padding-bottom: $spacing-mobile-6;
+
+		@include breakpoint(m) {
+			padding-bottom: $spacing-desktop-6;
+		}
+	}
+
+	.entry-header .entry-title {
+		margin: 0 auto;
+	}
+
+	& .entry-meta {
+		padding: $spacing-2 0 0;
+		text-align: center;
+	}
+
+	& .entry-cats {
+		@include flexbox;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 0 0 $spacing-2;
+
+		a {
+			padding-left: $spacing-xxs;
+		}
+	}
+
+	& .byline {
+		display: block;
+		color: $color__text_two;
+	}
+
+	& .entry-comments {
+		position: relative;
+		display: inline-block;
+	}
+
+	.post-thumb {
+
+		justify-content: center;
+		@include flexbox;
+
+		& img {
+			display: block;
+		}
+	}
+
+	.entry-footer {
+		padding-top: $spacing-2;
+
+		@include breakpoint(m) {
+			padding-top: $spacing-2;
+		}
+
+		.entry-tags {
+			@include flexbox;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+}
+
+/* Customize Setting - Theme - Style Featured Images Border Radius */
+.post-thumb img {
+
+	.single-post & {
+		border-radius: 0;
+	}
+
+	.single-post.featuredimg-radius-none & {
+		border-radius: 0;
+	}
+
+	.single-post.featuredimg-radius-s & {
+		border-radius: $border-radius-s;
+	}
+
+	.single-post.featuredimg-radius-m & {
+		border-radius: $border-radius-m;
+	}
+
+	.single-post.featuredimg-radius-l & {
+		border-radius: $border-radius-l;
+	}
+}
+
+/* Related Posts */
+.related-wrap {
+	margin: $spacing-mobile-10 0 0;
+	@include breakpoint(m) {
+		margin: $spacing-desktop-10 0 0;
+	}
+}
+
+.related .section-title {
+	@include flexbox;
+	justify-content: space-between;
+	padding-bottom: $spacing-mobile-6;
+
+	@include breakpoint(m) {
+		padding-bottom: $spacing-desktop-6;
+		line-height: 1;
+	}
+
+	.related-more-link {
+		display: none;
+
+		@include breakpoint(m) {
+			@include flexbox;
+			letter-spacing: 0;
+		}
+	}
+}
+
+.related-container {
+	@include flexbox;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.related-post {
+	margin-bottom: $spacing-mobile-6;
+
+	@include breakpoint(m) {
+		margin-bottom: $spacing-desktop-6;
+		float: left;
+	}
+}
+
+.related-img {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 0 0 $spacing-3;
+
+	&:hover {
+		background: $color__white;
+	}
+}
+
+.related-thumb {
+	line-height: 0;
+}
+
+/* Comments */
+.comments-area {
+	padding-top: $spacing-mobile-6;
+	padding-bottom: $spacing-mobile-10;
+	clear: both;
+
+	@include breakpoint(m) {
+		padding-top: $spacing-desktop-6;
+		padding-bottom: $spacing-desktop-10;
+	}
+}
+
+.comments-area .comments-title {
+	display: block;
+	position: relative;
+	padding: 0 0 $spacing-3;
+
+	span {
+		display: none;
+		@include font-regular;
+		@include breakpoint(m) {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin-top: 12px;
+			padding: 0;
+		}
+	}
+}
+
+.comment-list {
+	list-style: none;
+
+	.children {
+		margin-left: 46px;
+		padding: 0;
+		list-style: none;
+	}
+}
+
+.comment-body {
+	position: relative;
+	margin: $spacing-3 0 0;
+	padding: 0;
+}
+
+.comment-content-wrap {
+	margin-left: 6px;
+	background-color: $color__background;
+	padding: 6px $spacing-s;
+
+	@include breakpoint(m) {
+		padding: $spacing-2;
+	}
+
+	p {
+		margin: 0 0 $spacing-1;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+
+.comments-border .comment-content-wrap {
+	border: 1px solid $color__border;
+}
+
+.comment-meta {
+	padding: $spacing-xxs 0 0 58px;
+	@include breakpoint(m) {
+		padding: $spacing-xxs 0 0 62px;
+	}
+
+	.children & {
+		padding: $spacing-xxs 0 0 42px;
+		@include breakpoint(m) {
+			padding: $spacing-xxs 0 0 46px;
+		}
+	}
+
+	time {
+		display: inline;
+	}
+}
+
+.comment-body {
+
+	p.comment-awaiting-moderation {
+		margin: 0 0 0;
+		display: inline-block;
+		@include breakpoint(m) {
+			margin: 0 0 0;
+		}
+	}
+
+	.reply {
+		display: inline;
+	}
+}
+
+.comments-area .no-comments {
+	margin: $spacing-mobile-5 0 0;
+	@include breakpoint(m) {
+		margin: $spacing-desktop-5 0 0;
+	}
+}
+
+.comment-metadata .edit-link,
+.comment-metadata .reply {
+	display: inline;
+	margin-left: -2px;
+}
+
+.comment-edit-link,
+.comment-metadata .comment-reply-link {
+	padding-left: $spacing-xxs;
+}
+
+.comment-author {
+
+	padding-bottom: $spacing-xxs;
+
+	.fn {
+		@include font-body-xs;
+	}
+}
+
+/* Comments Reply */
+.comment-respond {
+	position: relative;
+	margin: $spacing-mobile-5 0 0;
+	padding: 0;
+	@include breakpoint(m) {
+		margin: $spacing-desktop-5 0 0;
+	}
+}
+
+.comment-reply-title {
+	position: relative;
+}
+
+.comment-reply-title #cancel-comment-reply-link {
+	display: block;
+	padding-top: $spacing-xs;
+	font-weight: normal;
+	@include font-body-xxs;
+	@include breakpoint(m) {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+.comment-respond .form-submit {
+	margin: 0;
+}
+
+.comment-notes,
+.logged-in-as {
+	margin: 0;
+	padding: $spacing-xxs 0 $spacing-mobile-4;
+	@include breakpoint(m) {
+		padding: $spacing-xs 0 $spacing-desktop-4;
+	}
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+	margin: $spacing-2 0 0;
+}
+
+/* Authorbox */
+.authorbox-wrap {
+	@include flexbox;
+	flex-direction: column;
+	justify-content: center;
+	padding: $spacing-mobile-9 0 0 0;
+	@include breakpoint(m) {
+		flex-direction: row;
+		justify-content: flex-start;
+		padding: $spacing-desktop-9 0 0 0;
+	}
+}
+
+.authorbox-content {
+	text-align: center;
+	@include breakpoint(m) {
+		text-align: left;
+		flex: 3;
+	}
+}
+
+.authorbox-title {
+	padding: 0 0 $spacing-1;
+
+	@include breakpoint(m) {
+		padding: 0 0 $spacing-1;
+	}
+}
+
+.authorbox .author-name {
+	padding: 0 0 $spacing-2;
+}
+
+.authorbox-content span {
+	display: block;
+}
+
+.authorbox-content .author-bio {
+	margin: 0;
+	padding: $spacing-2 0 0 0;
+}
+
+/* Authorbox on Archive */
+.archive.author .author-name span {
+	padding-top: $spacing-1;
+}
+
+.archive.author .author-pic {
+	display: block;
+	width: $spacing-desktop-8;
+	padding-bottom: $spacing-2;
+	@include breakpoint(m) {
+		width: 160px;
+		margin-right: $spacing-desktop-6;
+		padding-bottom: 0;
+	}
+}
+
+.archive.author .author-pic img {
+	@include avatar-xl;
+}
+
+.archive.author .authorbox-content {
+	width: 100%;
+
+	@include breakpoint(m) {
+		width: calc(100% - 208px);
+		max-width: 480px;
+	}
+
+	h1 {
+		margin: 0;
+	}
+
+}

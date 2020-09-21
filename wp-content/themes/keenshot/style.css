@@ -1,0 +1,670 @@
+/*!
+Theme Name: Keenshot
+Theme URI: http://themes.keendevs.com/keenshot/
+Author: Keendevs
+Author URI: https://keendevs.com/
+Description: Keenshot is an amazingly designed photography WordPress theme with outstanding and trendy looks, color and layout that is best for any photographer to showcase your works. It is seo friendly, super responsive for any devices and browsers, light-weight and easy to customize. It support Gutenberg, Elementor, Visual Composer and any other popular page builders. The great thing about Keenshots is the support from author. You can import predefined Elementor page builder demo by using One Click Demo Importer plugin. Checkout our demo: http://themes.keendevs.com/keenshot Give it a try and let us know for anything, anytime.
+
+For more information about Keenshot please go to http://themes.keendevs.com/keenshot/
+Version: 2.0.4
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: keenshot
+Tags: blog, portfolio, photography, one-column, right-sidebar, left-sidebar,  custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready
+*/
+
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+
+
+/**
+* ===============
+* Header Style
+* ===============
+*/
+.admin-bar .header {
+    min-height: 88px;
+}
+.header {
+    min-height: 120px;
+}
+
+.header .navbar .navigation.center {
+    display: flex;
+    flex-flow: column;
+    padding-top: 20px;
+}
+
+.header .navbar-header .logo img {
+    max-height: 50px;
+    width: auto;
+}
+
+/*gallery photo hover*/
+
+dl.gallery-item dt.gallery-icon a {
+    display: block;
+    position: relative;
+    transition: all 0.5s;
+}
+
+
+
+dl.gallery-item dt.gallery-icon a:before {
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+dl.gallery-item dt.gallery-icon a:after {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    content: '+';
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 32px;
+    transform: translate(0, 20px);
+    font-weight: 600;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+dl.gallery-item dt.gallery-icon a:hover:before {
+    background: #18122a82;
+}
+dl.gallery-item dt.gallery-icon a:hover:after {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+.search-highlight {
+    color: green;
+}
+
+.site-url a {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+.site-description a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn-warning {
+    border: 1px solid #7B62D8;
+}
+
+.pagination li.active a {
+    background-color: #000;
+    color: #ffffff;
+}
+
+ul.instagram-pics.instagram-size-thumbnail.instagram-photo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 5px 1fr 5px 1fr 5px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.instagram-pics img {
+    width: 100%;
+}
+
+.stylish-border {
+    margin-bottom: 5px;
+}
+
+.wp-caption {
+    padding: 0;
+}
+
+.wp-caption-text {
+    padding: 0;
+}
+
+.screen-reader-text {
+    padding: 0;
+}
+
+.gallery-caption {
+    padding: 0;
+}
+
+.bypostauthor {
+    padding: 0;
+}
+
+.alignright {
+    padding: 0;
+}
+
+.alignleft {
+    padding: 0;
+}
+
+.aligncenter {
+    padding: 0;
+}
+
+/* shop page style ==============*/
+
+.shop-page {
+    padding: 50px 0;
+}
+
+.shop-page ul li {
+    list-style: none;
+}
+
+.shop-page .sidebar ul li ul.product-categories {
+    padding-left: 0;
+}
+
+.shop-page .sidebar ul li {
+    padding-bottom: 30px;
+}
+
+.shop-page .sidebar .woocommerce-product-search {
+    position: relative;
+    background: white;
+    margin: 0 0 30px;
+}
+
+.shop-page .sidebar .woocommerce-product-search input {
+    padding: 12px 15px !important;
+    color: #ADADAD;
+    font-weight: 300;
+    font-family: "Montserrat";
+    font-size: 0.875rem;
+    line-height: 1.28571;
+    letter-spacing: 0.05em;
+}
+
+.shop-page .sidebar .woocommerce-product-search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #7b62d8;
+    border: 0;
+    height: 100%;
+    width: 70px;
+}
+
+.shop-page .sidebar ul li a {
+    color: #000;
+}
+
+.shop-page .sidebar ul li ul li {
+    padding-bottom: 5px;
+}
+
+.shop-page .variations label {
+    color: #000;
+}
+
+.shop-page .variations #pa_color {
+    margin-bottom: 8px;
+    padding: 0 12px;
+}
+
+.shop-page .variations #logo {
+    padding: 0 12px;
+}
+
+.shop-page .sidebar ul li ul.children {
+    padding-left: 12px;
+}
+
+p.woocommerce-result-count {
+    color: #000;
+}
+
+.woocommerce .woocommerce-ordering select {
+    padding: 15px;
+    color: #000;
+}
+
+.quantity input {
+    padding: 5px 10px !important;
+}
+
+body {
+    color: #000;
+}
+
+.coupon button.button {
+    margin-top: 10px !important;
+}
+
+nav.woocommerce-MyAccount-navigation ul li {
+    padding: 4px 0;
+}
+
+nav.woocommerce-MyAccount-navigation ul li a {
+    color: black;
+    font-size: 16px;
+}
+
+.blog-single .sidebar .widgettitle {
+    margin: 0 0 7px;
+}
+
+ul.product-categories li a {
+    color: #000;
+}
+
+.error-holder {
+    margin: 50px 0;
+}
+
+.error-page {
+    margin-bottom: 100px;
+}
+
+a.btn-primary.error-page {
+    padding: 10px;
+}
+
+ol, ul {
+    padding-left: 0px !important;
+}
+
+.blog-list ul.post-items .post-item .post-meta .comment-whislist a {
+    font-family: "Font Awesome 5 Free";
+}
+
+.blog-list ul.post-items .post-item .post-meta .comment-whislist a.fa-heart:before {
+    margin-right: 5px;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+.mfp-zoom-in .mfp-with-anim {
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+.mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+/* 
+
+====== Newspaper effect ======
+
+*/
+.mfp-newspaper .mfp-with-anim {
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: scale(0) rotate(500deg);
+    -ms-transform: scale(0) rotate(500deg);
+    transform: scale(0) rotate(500deg);
+}
+
+.mfp-newspaper.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.mfp-newspaper.mfp-ready .mfp-with-anim {
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+}
+
+.mfp-newspaper.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-newspaper.mfp-removing .mfp-with-anim {
+    -webkit-transform: scale(0) rotate(500deg);
+    -ms-transform: scale(0) rotate(500deg);
+    transform: scale(0) rotate(500deg);
+    opacity: 0;
+}
+
+.mfp-newspaper.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+#gmap {
+    height: auto;
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar-toggle .icon-bar .inner {
+        color: #7B62D8;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar-toggle .icon-bar .inner {
+        background-color: #7B62D8;
+    }
+}
+
+.pull-right {
+    max-width: 300px;
+}
+
+.pull-left {
+    max-width: 300px;
+}
+
+.post-meta p a {
+    padding: 0 4px;
+}
+
+/* Accessibility */
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    -webkit-clip-path: none;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    right: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+    outline: 0;
+}
+
+/*
+===============================
+home page custom css for demo*
+===============================
+/
+ */
+.kd_service_item {
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .kd_service_item:after {
+        content: '';
+        right: -30px;
+        bottom: 0;
+        width: 5px;
+        height: 240px;
+        position: absolute;
+    }
+
+    .kd_border_black.kd_service_item:after {
+        background: #000;
+    }
+
+    .kd_border_white.kd_service_item:after {
+        background: #fff;
+        left: -30px;
+    }
+}
+
+.kd_home_gallery #gallery-1 .gallery-item {
+    margin-top: 0 !important;
+}
+
+.kd_home_gallery .gallery img {
+    border: 0 !important;
+}
+
+.latest-post {
+    padding: 0 !important;
+}
+
+/*Portfolio page css for elementor element*/
+.kd_home_gallery dl.gallery-item {
+    margin-bottom: 0;
+    margin-top: 0 !important;
+}
+
+.kd_tab .elementor-tab-title.elementor-active {
+    background-color: #fff;
+}
+
+.kd_tab.elementor-widget-tabs .elementor-tab-content {
+    padding: 0 !important
+}
+
+.kd_tab .elementor-tabs-content-wrapper {
+    padding-top: 160px;
+}
+
+.kd_tab .elementor-tab-title a {
+    font-size: 30px;
+}
+
+.kd_tab div#elementor-tab-title-1471 {
+    padding: 65px 25px !important;
+}
+
+.kd_tab.elementor-widget-tabs .elementor-tab-desktop-title {
+    padding: 35px 25px !important;
+}
+
+@media screen and (max-width: 999px) {
+    .kd_tab .elementor-tab-title a {
+        font-size: 22px;
+    }
+
+    .kd_tab .elementor-tabs-content-wrapper {
+        padding-top: 85px;
+    }
+
+    .kd_tab div#elementor-tab-title-1471 {
+        padding: 28px 15px !important;
+    }
+
+    .kd_tab.elementor-widget-tabs .elementor-tab-desktop-title {
+        padding: 20px 15px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .kd_tab .elementor-tab-title a {
+        font-size: 22px;
+    }
+
+    .kd_tab .elementor-tabs-content-wrapper {
+        padding-top: 85px;
+    }
+
+    .kd_tab div#elementor-tab-title-1471 {
+        padding: 28px 15px !important;
+    }
+
+    .kd_tab.elementor-widget-tabs .elementor-tab-desktop-title {
+        padding: 20px 15px !important;
+    }
+}
+
+/*about page demo css*/
+.kd_progress_bar .elementor-progress-percentage {
+    padding-right: 0 !important;
+    position: absolute;
+    right: 0;
+    top: -35px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.kd_progress_bar .elementor-progress-bar {
+    margin-top: 5px;
+}
+
+.kd_team_member_item:hover .kd_team_social_icon {
+    z-index: 1 !important;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@media screen and (max-width: 999px) {
+    .kd_progress_bar .elementor-progress-percentage {
+        font-size: 18px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .kd_progress_bar .elementor-progress-percentage {
+        font-size: 16px
+    }
+    .header {
+        min-height: 90px;
+    }
+}
+
+/*contact page css for demo*/
+@media screen and (min-width: 768px) {
+    .kd_contact_page_social .elementor-social-icons-wrapper {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .kd_contact_page_social .elementor-social-icons-wrapper .elementor-social-icon:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    /*pricing page demo css*/
+    .kd_title_rotate h2 {
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+}
+
+.kd_contact_form div.wpforms-container-full .wpforms-form button[type=submit] {
+    background: #7B62D8 !important;
+    color: #fff !important;
+    width: auto !important;
+    padding: 13px 30px !important;
+    font-size: 18px !important;
+    text-transform: uppercase;
+}
+
+.kd_contact_form div.wpforms-container-full .wpforms-form input:focus, .kd_contact_form div.wpforms-container-full .wpforms-form textarea:focus, .kd_contact_form div.wpforms-container-full .wpforms-form select:focus {
+    border: 0;
+    border-bottom: 1px solid #7B62D8;
+}
+
+.kd_contact_form div.wpforms-container-full .wpforms-form input[type=date], .kd_contact_form div.wpforms-container-full .wpforms-form input[type=datetime], .kd_contact_form div.wpforms-container-full .wpforms-form input[type=datetime-local], .kd_contact_form div.wpforms-container-full .wpforms-form input[type=email], .kd_contact_form div.wpforms-container-full .wpforms-form input[type=month], .kd_contact_form div.wpforms-container-full .wpforms-form input[type=number], div.wpforms-container-full .wpforms-form input[type=password], .kd_contact_form div.wpforms-container-full .wpforms-form input[type=range], div.wpforms-container-full .wpforms-form input[type=search], .kd_contact_form div.wpforms-container-full .wpforms-form input[type=tel], .kd_contact_form div.wpforms-container-full .wpforms-form input[type=text], .kd_contact_form div.wpforms-container-full .wpforms-form input[type=time], div.wpforms-container-full .wpforms-form input[type=url], .kd_contact_form div.wpforms-container-full .wpforms-form input[type=week], .kd_contact_form div.wpforms-container-full .wpforms-form select, .kd_contact_form div.wpforms-container-full .wpforms-form textarea {
+    background-color: transparent !important;
+    border: 0 !important;
+    border-bottom: 1px solid #7B62D8 !important;
+    padding-left: 0 !important;
+}
+

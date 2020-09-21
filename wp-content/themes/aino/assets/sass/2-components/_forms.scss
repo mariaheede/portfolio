@@ -1,0 +1,164 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"] {
+	width: 100%;
+	box-sizing: border-box;
+	background-color: transparent;
+	border: 1px solid $color__border;
+	height: $spacing-desktop-7;
+	padding: 0 $spacing-3;
+	outline: none;
+
+	@include input-placeholder {
+		color: #8e8e8e;
+	}
+
+	&:focus,
+	&:active {
+		outline: 0;
+		border: 1px solid #707070;
+	}
+}
+
+textarea {
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid $color__border;
+	padding: $spacing-2 $spacing-3;
+	outline: none;
+
+	@include input-placeholder {
+		color: #8e8e8e;
+	}
+
+	&:focus,
+	&:active {
+		outline: 0;
+		border: 1px solid #707070;
+	}
+}
+
+.color-notice,
+label.color-notice span {
+	color: $color__notification;
+}
+
+.comment-respond textarea {
+		height: 150px;
+}
+
+form p {
+	margin: 0 0 $spacing-3;
+
+	@include breakpoint(m) {
+		margin: 0 0 $spacing-3;
+	}
+}
+
+form .comment-form-cookies-consent {
+	margin: 0;
+	padding: $spacing-3 0 0 0;
+	clear: both;
+}
+
+form .comment-form-cookies-consent label {
+	display: inline;
+	padding-left: 12px;
+}
+
+form p.comment-form-comment {
+	margin: 0;
+	line-height: 0;
+}
+
+form label {
+	display: block;
+	padding: 0 0 $spacing-xxs;
+	@include font-label;
+}
+
+label .required {
+	@include font-label;
+}
+
+select {
+	background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
+	border: 1px solid $color__border;
+	background-repeat:no-repeat;
+	background-position: right 14px top 21px;
+	background-size: 12px 12px;
+	padding: 15px 40px 15px 15px;
+	border-radius: 0;
+	-webkit-appearance: none;
+	width: 100%;
+}
+
+/* Form Submit */
+input[type="submit"],
+button[type="submit"] {
+	display: block;
+	clear: both;
+	margin-top: $spacing-3;
+	@include breakpoint(m) {
+		margin-top: $spacing-3 0 0;
+	}
+}
+
+/* Search Form */
+.searchform-wrap,
+.form-wrap {
+	position: relative;
+	display: block;
+	clear: both;
+}
+
+.entry-content .search-form,
+.widget_search .search-form {
+	position: relative;
+}
+
+.entry-content label .search-icon,
+.widget_search label .search-icon {
+	display: none;
+}
+
+.entry-content .search-submit span.search-icon,
+.widget_search .search-submit span.search-icon {
+	width: 120px;
+	height: $spacing-desktop-7;
+	padding: 16px 0 0;
+}
+
+/* Form Styles (via Customizer Settings) */
+.form-curved {
+	input,
+	textarea,
+	select,
+	.comment-content-wrap {
+		@include border-radius-s;
+	}
+}
+
+.form-round {
+	input,
+	select {
+		border-radius: 6.25em;
+	}
+
+	textarea,
+	.comment-content-wrap {
+		@include border-radius-m;
+	}
+}

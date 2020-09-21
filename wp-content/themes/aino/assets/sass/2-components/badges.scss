@@ -1,0 +1,40 @@
+/* Sticky Post Badge */
+.badge-highlight {
+	display: inline-block;
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	z-index: 1;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 1.23;
+	background: $color__black;
+	color: $color__white;
+	padding: $spacing-1 $spacing-2;
+
+	.btn-curved & {
+		border-radius: $border-radius-xs;
+	}
+
+	.btn-round & {
+		border-radius: $border-radius-circle;
+	}
+}
+
+/* Post Author Badge */
+.bypostauthor .comment-author {
+	@include flexbox;
+	justify-content: flex-start;
+	align-items: center;
+
+	.author-badge {
+		@include font-body-xxs;
+		@include font-bold;
+		line-height: 1;
+		color: $color__border;
+		margin-left: 4px;
+		padding: 3px 6px;
+		border-radius: $border-radius-circle;
+		border: 1px solid $color__border;
+	}
+}

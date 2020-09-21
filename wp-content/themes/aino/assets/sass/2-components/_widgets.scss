@@ -1,0 +1,102 @@
+/* Widget Areas */
+.header-menu-widget-area {
+	display: block;
+	padding: $spacing-2 0 0;
+	@include breakpoint(m) {
+		padding: $spacing-2 0 0;
+	}
+}
+
+.header-menu-widget-area .textwidget p {
+	margin: 0;
+}
+
+.widget-title {
+	padding: 0 0 $spacing-3;
+}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+	max-width: 100%;
+}
+
+.textwidget p:last-child {
+	margin-bottom: 0;
+}
+
+.widget ul li {
+	list-style: none;
+	padding: 0 0 $spacing-2;
+}
+
+.widget ul ul li:last-child {
+	padding: 0;
+}
+
+.site-footer .sub-menu {
+	padding: $spacing-2 0 0 0;
+}
+
+/* Archive + Category + Pages + Nav Menu Widget */
+.widget_archive select,
+.widget_categories select {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	line-height: 1.42857143;
+	background-color: #fafafa;
+	background-image: none;
+	border: 1px solid $color__border;
+	border-color: $color__border;
+	@include border-radius(0);
+	box-shadow: none;
+}
+
+.widget-area-default .widget_categories ul.children,
+.widget-area-default .widget_nav_menu .sub-menu,
+.widget-area-default .widget_pages ul.children {
+	padding: $spacing-2 0 0 $spacing-3;
+	@include breakpoint(m) {
+		padding: $spacing-2 0 0 $spacing-3;
+	}
+}
+/* Calendar Widget */
+#wp-calendar caption {
+	font-weight: bold;
+}
+
+.widget_calendar th {
+	text-align: center;
+}
+
+.widget_calendar tfoot td {
+	border: 0;
+}
+
+/* Jetpack Sharing buttons */
+.widget_flickr .flickr-images {
+	text-align: left;
+	padding-bottom: $spacing-1;
+}
+
+.entry-content .sharedaddy {
+
+	padding-top: 16px;
+
+	h3.sd-title {
+		display: block;
+		font-weight: normal;
+		text-align: center;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	.sd-content ul {
+		display: flex;
+		justify-content: center;
+		margin: 0 !important;
+	}
+}
